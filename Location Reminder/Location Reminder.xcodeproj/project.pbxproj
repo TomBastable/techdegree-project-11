@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F260C66C239BB19E0098E0E9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260C66B239BB19E0098E0E9 /* Extensions.swift */; };
+		F2657D162397F08500287939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D152397F08500287939 /* AppDelegate.swift */; };
+		F2657D182397F08500287939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D172397F08500287939 /* SceneDelegate.swift */; };
+		F2657D1A2397F08500287939 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D192397F08500287939 /* DetailViewController.swift */; };
+		F2657D1D2397F08500287939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2657D1B2397F08500287939 /* Main.storyboard */; };
+		F2657D202397F08500287939 /* Location_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2657D1E2397F08500287939 /* Location_Reminder.xcdatamodeld */; };
+		F2657D222397F08600287939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2657D212397F08600287939 /* Assets.xcassets */; };
+		F2657D252397F08600287939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2657D232397F08600287939 /* LaunchScreen.storyboard */; };
+		F2657D302397F08700287939 /* Location_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D2F2397F08700287939 /* Location_ReminderTests.swift */; };
+		F2657D3B2397F08700287939 /* Location_ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D3A2397F08700287939 /* Location_ReminderUITests.swift */; };
+		F2657D49239908EF00287939 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D48239908EF00287939 /* MasterViewController.swift */; };
+		F2657D4B23990CB900287939 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D4A23990CB900287939 /* CreateViewController.swift */; };
+		F2657D4D2399197900287939 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D4C2399197900287939 /* Location.swift */; };
+		F2657D5123991A0C00287939 /* LocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657D5023991A0C00287939 /* LocationSearch.swift */; };
+		F2A3E24F2399D05600198A0E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3E24E2399D05600198A0E /* CoreDataStack.swift */; };
+		F2A3E251239A5B7F00198A0E /* FetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3E250239A5B7F00198A0E /* FetchedResultsController.swift */; };
+		F2A3E253239A623300198A0E /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3E252239A623300198A0E /* ReminderTableViewCell.swift */; };
+		F2B22031239920D90072DB49 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B22030239920D90072DB49 /* LocationTableViewCell.swift */; };
+		F2B22033239924D90072DB49 /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B22032239924D90072DB49 /* LocationError.swift */; };
+		F2B220352399B8140072DB49 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B220342399B8140072DB49 /* NotificationManager.swift */; };
+		F2B220382399CA8D0072DB49 /* Reminder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B220362399CA8D0072DB49 /* Reminder+CoreDataClass.swift */; };
+		F2B220392399CA8D0072DB49 /* Reminder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B220372399CA8D0072DB49 /* Reminder+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2657D2C2397F08700287939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2657D0A2397F08500287939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2657D112397F08500287939;
+			remoteInfo = "Location Reminder";
+		};
+		F2657D372397F08700287939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2657D0A2397F08500287939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2657D112397F08500287939;
+			remoteInfo = "Location Reminder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F260C66B239BB19E0098E0E9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F2657D122397F08500287939 /* Location Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2657D152397F08500287939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2657D172397F08500287939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2657D192397F08500287939 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F2657D1C2397F08500287939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2657D1F2397F08500287939 /* Location_Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Location_Reminder.xcdatamodel; sourceTree = "<group>"; };
+		F2657D212397F08600287939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2657D242397F08600287939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2657D262397F08600287939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2657D2B2397F08700287939 /* Location ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location ReminderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2657D2F2397F08700287939 /* Location_ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_ReminderTests.swift; sourceTree = "<group>"; };
+		F2657D312397F08700287939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2657D362397F08700287939 /* Location ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location ReminderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2657D3A2397F08700287939 /* Location_ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_ReminderUITests.swift; sourceTree = "<group>"; };
+		F2657D3C2397F08700287939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2657D48239908EF00287939 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F2657D4A23990CB900287939 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		F2657D4C2399197900287939 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F2657D5023991A0C00287939 /* LocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearch.swift; sourceTree = "<group>"; };
+		F2A3E24E2399D05600198A0E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F2A3E250239A5B7F00198A0E /* FetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsController.swift; sourceTree = "<group>"; };
+		F2A3E252239A623300198A0E /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		F2B22030239920D90072DB49 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		F2B22032239924D90072DB49 /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		F2B220342399B8140072DB49 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F2B220362399CA8D0072DB49 /* Reminder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F2B220372399CA8D0072DB49 /* Reminder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2657D0F2397F08500287939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D282397F08700287939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D332397F08700287939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2657D092397F08500287939 = {
+			isa = PBXGroup;
+			children = (
+				F2657D142397F08500287939 /* Location Reminder */,
+				F2657D2E2397F08700287939 /* Location ReminderTests */,
+				F2657D392397F08700287939 /* Location ReminderUITests */,
+				F2657D132397F08500287939 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2657D132397F08500287939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2657D122397F08500287939 /* Location Reminder.app */,
+				F2657D2B2397F08700287939 /* Location ReminderTests.xctest */,
+				F2657D362397F08700287939 /* Location ReminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2657D142397F08500287939 /* Location Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				F2B2202F239920BF0072DB49 /* Views */,
+				F2657D4E2399198C00287939 /* Models */,
+				F2657D4F2399199400287939 /* Controllers */,
+				F2657D152397F08500287939 /* AppDelegate.swift */,
+				F2657D172397F08500287939 /* SceneDelegate.swift */,
+				F2657D1B2397F08500287939 /* Main.storyboard */,
+				F2657D212397F08600287939 /* Assets.xcassets */,
+				F2657D232397F08600287939 /* LaunchScreen.storyboard */,
+				F2657D262397F08600287939 /* Info.plist */,
+				F2657D1E2397F08500287939 /* Location_Reminder.xcdatamodeld */,
+			);
+			path = "Location Reminder";
+			sourceTree = "<group>";
+		};
+		F2657D2E2397F08700287939 /* Location ReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2657D2F2397F08700287939 /* Location_ReminderTests.swift */,
+				F2657D312397F08700287939 /* Info.plist */,
+			);
+			path = "Location ReminderTests";
+			sourceTree = "<group>";
+		};
+		F2657D392397F08700287939 /* Location ReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2657D3A2397F08700287939 /* Location_ReminderUITests.swift */,
+				F2657D3C2397F08700287939 /* Info.plist */,
+			);
+			path = "Location ReminderUITests";
+			sourceTree = "<group>";
+		};
+		F2657D4E2399198C00287939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2657D4C2399197900287939 /* Location.swift */,
+				F2657D5023991A0C00287939 /* LocationSearch.swift */,
+				F2B22032239924D90072DB49 /* LocationError.swift */,
+				F2B220342399B8140072DB49 /* NotificationManager.swift */,
+				F2B220362399CA8D0072DB49 /* Reminder+CoreDataClass.swift */,
+				F2B220372399CA8D0072DB49 /* Reminder+CoreDataProperties.swift */,
+				F2A3E24E2399D05600198A0E /* CoreDataStack.swift */,
+				F2A3E250239A5B7F00198A0E /* FetchedResultsController.swift */,
+				F260C66B239BB19E0098E0E9 /* Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2657D4F2399199400287939 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2657D192397F08500287939 /* DetailViewController.swift */,
+				F2657D4A23990CB900287939 /* CreateViewController.swift */,
+				F2657D48239908EF00287939 /* MasterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2B2202F239920BF0072DB49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2B22030239920D90072DB49 /* LocationTableViewCell.swift */,
+				F2A3E252239A623300198A0E /* ReminderTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2657D112397F08500287939 /* Location Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2657D3F2397F08700287939 /* Build configuration list for PBXNativeTarget "Location Reminder" */;
+			buildPhases = (
+				F2657D0E2397F08500287939 /* Sources */,
+				F2657D0F2397F08500287939 /* Frameworks */,
+				F2657D102397F08500287939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Location Reminder";
+			productName = "Location Reminder";
+			productReference = F2657D122397F08500287939 /* Location Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2657D2A2397F08700287939 /* Location ReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2657D422397F08700287939 /* Build configuration list for PBXNativeTarget "Location ReminderTests" */;
+			buildPhases = (
+				F2657D272397F08700287939 /* Sources */,
+				F2657D282397F08700287939 /* Frameworks */,
+				F2657D292397F08700287939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2657D2D2397F08700287939 /* PBXTargetDependency */,
+			);
+			name = "Location ReminderTests";
+			productName = "Location ReminderTests";
+			productReference = F2657D2B2397F08700287939 /* Location ReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2657D352397F08700287939 /* Location ReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2657D452397F08700287939 /* Build configuration list for PBXNativeTarget "Location ReminderUITests" */;
+			buildPhases = (
+				F2657D322397F08700287939 /* Sources */,
+				F2657D332397F08700287939 /* Frameworks */,
+				F2657D342397F08700287939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2657D382397F08700287939 /* PBXTargetDependency */,
+			);
+			name = "Location ReminderUITests";
+			productName = "Location ReminderUITests";
+			productReference = F2657D362397F08700287939 /* Location ReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2657D0A2397F08500287939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Tom Bastable";
+				TargetAttributes = {
+					F2657D112397F08500287939 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F2657D2A2397F08700287939 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F2657D112397F08500287939;
+					};
+					F2657D352397F08700287939 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F2657D112397F08500287939;
+					};
+				};
+			};
+			buildConfigurationList = F2657D0D2397F08500287939 /* Build configuration list for PBXProject "Location Reminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2657D092397F08500287939;
+			productRefGroup = F2657D132397F08500287939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2657D112397F08500287939 /* Location Reminder */,
+				F2657D2A2397F08700287939 /* Location ReminderTests */,
+				F2657D352397F08700287939 /* Location ReminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2657D102397F08500287939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2657D252397F08600287939 /* LaunchScreen.storyboard in Resources */,
+				F2657D222397F08600287939 /* Assets.xcassets in Resources */,
+				F2657D1D2397F08500287939 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D292397F08700287939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D342397F08700287939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2657D0E2397F08500287939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B220352399B8140072DB49 /* NotificationManager.swift in Sources */,
+				F2657D49239908EF00287939 /* MasterViewController.swift in Sources */,
+				F2657D202397F08500287939 /* Location_Reminder.xcdatamodeld in Sources */,
+				F2657D4B23990CB900287939 /* CreateViewController.swift in Sources */,
+				F2B22031239920D90072DB49 /* LocationTableViewCell.swift in Sources */,
+				F2A3E251239A5B7F00198A0E /* FetchedResultsController.swift in Sources */,
+				F2657D1A2397F08500287939 /* DetailViewController.swift in Sources */,
+				F2657D5123991A0C00287939 /* LocationSearch.swift in Sources */,
+				F2A3E24F2399D05600198A0E /* CoreDataStack.swift in Sources */,
+				F2657D162397F08500287939 /* AppDelegate.swift in Sources */,
+				F2B22033239924D90072DB49 /* LocationError.swift in Sources */,
+				F2B220392399CA8D0072DB49 /* Reminder+CoreDataProperties.swift in Sources */,
+				F2B220382399CA8D0072DB49 /* Reminder+CoreDataClass.swift in Sources */,
+				F2657D182397F08500287939 /* SceneDelegate.swift in Sources */,
+				F260C66C239BB19E0098E0E9 /* Extensions.swift in Sources */,
+				F2657D4D2399197900287939 /* Location.swift in Sources */,
+				F2A3E253239A623300198A0E /* ReminderTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D272397F08700287939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2657D302397F08700287939 /* Location_ReminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2657D322397F08700287939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2657D3B2397F08700287939 /* Location_ReminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2657D2D2397F08700287939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2657D112397F08500287939 /* Location Reminder */;
+			targetProxy = F2657D2C2397F08700287939 /* PBXContainerItemProxy */;
+		};
+		F2657D382397F08700287939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2657D112397F08500287939 /* Location Reminder */;
+			targetProxy = F2657D372397F08700287939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2657D1B2397F08500287939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2657D1C2397F08500287939 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2657D232397F08600287939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2657D242397F08600287939 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2657D3D2397F08700287939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2657D3E2397F08700287939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2657D402397F08700287939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location Reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-Reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2657D412397F08700287939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location Reminder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-Reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2657D432397F08700287939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location ReminderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-ReminderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Location Reminder.app/Location Reminder";
+			};
+			name = Debug;
+		};
+		F2657D442397F08700287939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location ReminderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-ReminderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Location Reminder.app/Location Reminder";
+			};
+			name = Release;
+		};
+		F2657D462397F08700287939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location ReminderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-ReminderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Location Reminder";
+			};
+			name = Debug;
+		};
+		F2657D472397F08700287939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 947BDAE7U7;
+				INFOPLIST_FILE = "Location ReminderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Bedhair.Location-ReminderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Location Reminder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2657D0D2397F08500287939 /* Build configuration list for PBXProject "Location Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2657D3D2397F08700287939 /* Debug */,
+				F2657D3E2397F08700287939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2657D3F2397F08700287939 /* Build configuration list for PBXNativeTarget "Location Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2657D402397F08700287939 /* Debug */,
+				F2657D412397F08700287939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2657D422397F08700287939 /* Build configuration list for PBXNativeTarget "Location ReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2657D432397F08700287939 /* Debug */,
+				F2657D442397F08700287939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2657D452397F08700287939 /* Build configuration list for PBXNativeTarget "Location ReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2657D462397F08700287939 /* Debug */,
+				F2657D472397F08700287939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2657D1E2397F08500287939 /* Location_Reminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2657D1F2397F08500287939 /* Location_Reminder.xcdatamodel */,
+			);
+			currentVersion = F2657D1F2397F08500287939 /* Location_Reminder.xcdatamodel */;
+			path = Location_Reminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F2657D0A2397F08500287939 /* Project object */;
+}
