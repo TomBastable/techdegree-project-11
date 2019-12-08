@@ -30,7 +30,7 @@ class MasterViewController: UITableViewController, CLLocationManagerDelegate {
         //get user permission for notifications and location
         let center =  UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { (result, error) in
-            self.displayAlertWith(error: LocationError.locationPermissionsError)
+            if error != nil { DispatchQueue.main.async{self.displayAlertWith(error: LocationError.locationPermissionsError)} }
         }
         self.locationManager.requestWhenInUseAuthorization()
 
@@ -42,6 +42,7 @@ class MasterViewController: UITableViewController, CLLocationManagerDelegate {
         
         super.viewWillAppear(true)
         //reload tableview for cell reuse accuracy
+        
         self.tableView.reloadData()
         
     }

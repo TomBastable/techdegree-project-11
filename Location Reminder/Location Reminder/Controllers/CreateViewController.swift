@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreData
 
-class CreateViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
+class CreateViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     
     //MARK: - Properties
     
@@ -143,6 +143,20 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate, UISearc
             }
             
         }
+    }
+    
+    //MARK: - Hide Keyboard When Search Is Pressed
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        searchBar.resignFirstResponder()
+        
+    }
+    
+    //MARK: - Hide Keyboard When Return Is Pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     //MARK: - TableView DataSource
