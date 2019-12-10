@@ -20,17 +20,12 @@ class LocationSearch {
         var locationArray: [Location] = []
         //initialise local search request
         let request = MKLocalSearch.Request()
-        //initialise location manager
-        let locationManager = CLLocationManager()
-        //safely retrieve devices current location
-        guard let coordinate = locationManager.location?.coordinate else { completion([], LocationError.coordinateError) ; return }
         //apply search query to request
         request.naturalLanguageQuery = "\(query)"
-        //set the current device region / distance
-        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 3200, longitudinalMeters: 3200)
         //call the API
-        MKLocalSearch(request: request).start { (response, error) in
         
+        MKLocalSearch(request: request).start { (response, error) in
+            
             //safely check for error
         guard error == nil else { completion([], error) ; return }
             //safely check response
@@ -47,6 +42,7 @@ class LocationSearch {
                 completion([], LocationError.coordinateError)
                 return
             }
+            
             //Setup new location
             let newLocation = Location(locationName: location.name!, location: self.parseAddress(selectedItem: location.placemark), coordinate: coordinate)
             //append location to final array
